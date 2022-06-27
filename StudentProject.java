@@ -10,7 +10,9 @@ public class StudentProject {
 		String url = "jdbc:mysql://localhost:3306/shivadb";
 		String uname = "root";
 		String pass = "Shiv@hari1mysql";
-		String query = "insert into student values (4, 'heethru')";
+		int studentid = 5;
+		String studentname = "GMR";
+		String query = "insert into student values (" + studentid + ",'" + studentname + "')";
 		
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		Connection con = DriverManager.getConnection(url,uname,pass);
